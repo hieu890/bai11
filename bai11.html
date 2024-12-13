@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Float Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .cat, .dog {
+      width: 45%; /* Chia không gian đều cho hai div */
+      margin: 20px; /* Thêm khoảng cách giữa các div */
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .cat {
+      float: left; /* Đẩy div cat sang trái */
+      background-color: aquamarine;
+    }
+
+    .dog {
+      float: right; /* Đẩy div dog sang phải */
+      background-color: coral;
+    }
+
+    img {
+      max-width: 100px; /* Kích thước ảnh phù hợp */
+      height: auto;
+      float: left; /* Làm đoạn văn wrap xung quanh ảnh */
+      margin-right: 10px; /* Khoảng cách giữa ảnh và văn bản */
+      border-radius: 50%; /* Làm ảnh bo tròn */
+    }
+
+    h2 {
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1em;
+      line-height: 1.5; /* Dòng văn bản dễ đọc hơn */
+      text-align: justify;
+    }
+
+    footer {
+      clear: both; /* Đảm bảo footer nằm dưới hai div */
+      background-color: blueviolet;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 1em;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Cat Section -->
+  <div class="cat">
+    <h2>CATCSS</h2>
+    <img src="cat.jpeg" alt="cat in a box">
+    <p>Nap all day cat dog hate mouse eat string barf pillow no baths hate everything but kitty poochy. Sleep on
+      keyboard toy mouse squeak roll over. Mesmerizing birds. Poop on grasses licks paws destroy couch intently sniff
+      hand. The dog smells bad gnaw the corn cob.</p>
+  </div>
+
+  <!-- Dog Section -->
+  <div class="dog">
+    <h2>DOGCSS</h2>
+    <img src="dog.jpeg" alt="dogs in a box">
+    <p>Heckin good boys and girls long woofer big ol wow very biscit long woofer heck what a nice floof, long doggo
+      noodle horse vvv very taste wow. Very taste wow many pats aqua doggo he made many woofs pupperino, puggo doing me
+      a frighten.</p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    Copyright. This is the footer
+  </footer>
+</body>
+
+</html>
